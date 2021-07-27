@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:after,
+:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+a:hover {
+  color: var(--primary-custom-color) !important;
+}
+:root {
+  --primary-custom-color: #a82c48;
+  --secondary-custom-color: #43121d;
+  --third-custom-color: #f98169;
+  --white-color: #fff;
+  --text-color: #555;
+  --text-gray: #999;
+  --black-color: #000;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Quicksand", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--primary-font);
+  font-size: 100%;
+  font-weight: 400;
+}
+
+/* ===========================================
+            Custom Scroll Bar
+=========================================== */
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--white-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-custom-color);
+}
+
+/* ===========================================
+            Custom CSS
+=========================================== */
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  color: var(--secondary-custom-color);
+}
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: var(--secondary-font);
+  color: var(--secondary-custom-color);
+  line-height: 3rem;
+}
+h4 {
+  color: var(--secondary-custom-color);
+  font-weight: 800;
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+h5 {
+  font-size: 1rem;
+  font-family: var(--secondary-font);
+  color: var(--primary-custom-color);
+  text-transform: capitalize;
+  font-weight: 700;
+}
+p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: var(--text-color);
+  letter-spacing: 1px;
+}
+.main-btn {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  line-height: 1.5625rem;
+  background-color: var(--primary-custom-color);
+  border: 0.1875rem solid var(--primary-custom-color);
+  color: var(--white-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0 2px 10px -1px rgb(0 0 0 / 19%);
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+}
+.white-btn {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  line-height: 1.5625rem;
+  background-color: var(--white-color);
+  border: 0.1875rem solid var(--white-color);
+  color: var(--text-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0 2px 10px -1px rgb(0 0 0 / 19%);
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+}
+.main-btn:hover {
+  background-color: transparent;
+  color: var(--primary-custom-color);
+}
+.white-btn:hover {
+  background-color: transparent;
+  color: var(--primary-custom-color);
+  border: 0.1875rem solid var(--primary-custom-color);
+}
+.wrapper {
+  padding: 8.25rem 0;
+}
+.story-section .text-content {
+  width: 70%;
+  margin: auto;
+  padding: 11% 0;
+}
+.text-content {
+  width: 70%;
+  margin: auto;
+}
+.counter-section h2,
+.textimonial-section h2,
+.book-food-text h2 {
+  color: var(--white-color);
+}
+
+/* ===========================================
+            Nav CSS
+=========================================== */
+.navigation-wrap {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.03 ease-out;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: all 0.03 ease-out;
+  -moz-transition: all 0.03 ease-out;
+  -ms-transition: all 0.03 ease-out;
+  -o-transition: all 0.03 ease-out;
+}
+.navigation-wrap .nav-item {
+  padding: 0 0.625rem;
+  transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+}
+
+.navbar-toggler:focus {
+  outline: unset;
+  border: unset;
+  box-shadow: none;
+}
+.nav-link {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--primary-custom-color);
+  letter-spacing: 1px;
+}
+.navigation-wrap .main-btn {
+  padding: 0.3125rem 0.4375rem;
+  box-shadow: none;
+  margin-left: 0.625rem;
+}
+
+/* Change Navbar styling on Scroll  */
+.navigation-wrap.scroll-on {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--white-color);
+  box-shadow: 0 0.125rem 1.75rem rgb(0, 0, 0, 0.1);
+  transition: all 0.15s ease-in-out 0s;
+  -webkit-transition: all 0.15s ease-in-out 0s;
+  -moz-transition: all 0.15s ease-in-out 0s;
+  -ms-transition: all 0.15s ease-in-out 0s;
+  -o-transition: all 0.15s ease-in-out 0s;
+}
+
+/* ===========================================
+            Slider CSS
+=========================================== */
+.top-banner {
+  background: url(../images/bg/bg.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  background-attachment: fixed;
+  padding: 16.975rem 0 9.375rem;
+}
+/* ===========================================
+            Counter CSS
+=========================================== */
+
+.counter-section {
+  background-color: var(--primary-custom-color);
+  padding: 2.5rem 0;
+}
+.counter-section p {
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+/* ===========================================
+            About Us CSS
+=========================================== */
+.about-section {
+  background: var(--white-color);
+}
+.about-section .cart,
+.about-section .cart img {
+  border-radius: 0.625rem;
+  -webkit-border-radius: 0.625rem;
+  -moz-border-radius: 0.625rem;
+  -ms-border-radius: 0.625rem;
+  -o-border-radius: 0.625rem;
+}
+.about-section .text-sec {
+  padding-left: 2rem;
+}
+/* ===========================================
+            Food CSS
+=========================================== */
+.food-type {
+  padding-top: 3.25rem;
+}
+.food-type ul li {
+  margin-left: 30px;
+  color: var(--text-color);
+  position: relative;
+  font-size: 1rem;
+  line-height: 32px;
+}
+.food-type ul li::before {
+  position: absolute;
+  color: var(--primary-custom-color);
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.25rem;
+  content: "\f00c";
+  left: -2rem;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 3px;
+  font-weight: 900;
+}
+
+/* Story section  */
+.story-section {
+  background: url(../images/bg/bg1.jpg) no-repeat center;
+  height: 28.125rem;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+.story-section h2 {
+  color: var(--primary-custom-color);
+}
+
+/* Explore Foods  */
+
+.explore-food .text-content {
+  width: 70%;
+  margin: auto;
+  padding: 0;
+}
+
+.explore-food .cart {
+  border-radius: 00.9375rem;
+  -webkit-border-radius: 00.9375rem;
+  -moz-border-radius: 00.9375rem;
+  -ms-border-radius: 00.9375rem;
+  -o-border-radius: 00.9375rem;
+}
+.explore-food .cart img {
+  object-fit: cover;
+  border-radius: 0.9375rem;
+  -webkit-border-radius: 0.9375rem;
+  -moz-border-radius: 0.9375rem;
+  -ms-border-radius: 0.9375rem;
+  -o-border-radius: 0.9375rem;
+}
+.explore-food span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-custom-color);
+  padding-bottom: 1rem;
+  border-bottom: 0.0625rem;
+}
+.explore-food del {
+  color: var(--text-gray);
+  margin-left: 0.5rem;
+}
+
+/* Testimonal section  */
+.testimonal-section {
+  background-color: var(--primary-custom-color);
+}
+.testimonal-section .carousel-item {
+  background-color: var(--white-color);
+  padding: 3rem 3.125rem;
+  margin-top: 3rem;
+  border-radius: 0.975rem;
+  -webkit-border-radius: 0.975rem;
+  -moz-border-radius: 0.975rem;
+  -ms-border-radius: 0.975rem;
+  -o-border-radius: 0.975rem;
+  text-align: center;
+}
+.testimonal-section .carousel-item img {
+  max-width: 10rem;
+  max-height: 10rem;
+  margin: 0.3125rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 10px solid rgb(228, 228, 228);
+}
+.testimonal-section .carousel-item p {
+  font-size: 1.325rem;
+  padding: 0 11% 0.625rem;
+  line-height: 2.0625rem;
+}
+.testimonal-section .carousel .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  outline: none;
+  border-radius: 50%;
+  margin-right: 1rem;
+  border: none;
+  opacity: 0.3;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.testimonal-section .carousel .carousel-indicators {
+  bottom: -3rem;
+}
+.testimonal-section .carousel .carousel-indicators button:hover {
+  opacity: 1;
+}
+.testimonal-section .carousel-indicators button:active {
+  opacity: 1;
+}
+
+/* FAQ section  */
+.faq span {
+  color: var(--primary-custom-color);
+  font-size: 2rem;
+  margin-right: 0.04rem;
+}
+
+/* Order food  */
+.book-food {
+  background: url(../images/bg/7.jpg) no-repeat center;
+  background-attachment: fixed;
+  width: 100%;
+  padding: 4.375rem;
+  background-position: 0 70px;
+}
+.book-food h2 {
+  color: white;
+}
+
+/* Newsletter  */
+.form-newsletter {
+  width: 65%;
+  margin: 0 auto;
+}
+.newsletter .form-control {
+  height: 3.225rem;
+  padding: 0 1.25rem;
+  font-size: 0.875rem;
+  width: 100%;
+  border: none;
+  color: var(--black-color);
+  background: transparent;
+  border: 0.18rem solid var(--text-gray);
+  font-weight: 700;
+}
+.newsletter .form-control:hover,
+.newsletter .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--primary-custom-color);
+}
+/* Footer  */
+.footer {
+  background-color: var(--primary-custom-color);
+}
+.footer .footer-link {
+  color: var(--white-color);
+  font-size: 1rem;
+  padding: 0 1.875rem;
+}
+.footer a:hover {
+  color: var(--white-color) !important;
+}
+.footer i {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}

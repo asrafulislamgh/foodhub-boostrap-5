@@ -1,0 +1,44 @@
+@media (max-width: 991px) {
+  .text-content {
+    width: 100%;
+  }
+  .navigation-wrap .navbar-brand img {
+    height: 3.8125rem;
+    width: auto;
+  }
+  .navigation-wrap {
+    text-align: center;
+  }
+  .navigation-wrap .nav-link {
+    line-height: 1.875rem;
+  }
+  .wrapper {
+    padding: 6rem 0;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 2.0625rem;
+  }
+  .text-content {
+    padding: 5%;
+  }
+  .wrapper {
+    padding: 4rem 0;
+  }
+  .form-newsletter {
+    width: 90%;
+  }
+  .newsletter .main-btn {
+    width: 100%;
+  }
+  .footer .footer-link,
+  .footer a i {
+    padding: 0 0.6rem;
+  }
+}
